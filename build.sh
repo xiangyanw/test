@@ -62,7 +62,7 @@ get_src()
 
   echo "Downloading $url"
 
-  curl -sSL "$url" -o "$f"
+  curl -sSL --retry 5 "$url" -o "$f"
   echo "$hash  $f" | sha256sum -c - || exit 10
   tar xzf "$f"
   rm -rf "$f"
