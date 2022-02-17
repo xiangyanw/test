@@ -18,7 +18,7 @@ FROM alpine:3.11 as builder
 COPY . /
 
 RUN apk add -U bash \
-  && /build.sh
+  && bash /build.sh
 
 # Use a multi-stage build
 FROM alpine:3.11
