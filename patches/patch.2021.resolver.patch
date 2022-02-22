@@ -1,7 +1,7 @@
 diff --git src/core/ngx_resolver.c src/core/ngx_resolver.c
---- src/core/ngx_resolver.c
-+++ src/core/ngx_resolver.c
-@@ -4008,15 +4008,15 @@ done:
+--- old/src/core/ngx_resolver.c
++++ new/src/core/ngx_resolver.c
+@@ -3993,15 +3993,15 @@ done:
              n = *src++;
 
          } else {
